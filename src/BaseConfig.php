@@ -10,7 +10,7 @@
 namespace FelixArntz\Config;
 
 /**
- * Base class for a configuration object.
+ * Class for a configuration object.
  *
  * @since 1.0.0
  */

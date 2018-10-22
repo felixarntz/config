@@ -10,8 +10,8 @@
 namespace FelixArntz\Config;
 
 use FelixArntz\Config\Exception\ConfigKeyNotFoundException;
+use FelixArntz\Config\Exception\ConfigValidationException;
 use FelixArntz\Contracts\SchemaAwareTrait;
-use FelixArntz\Contracts\Exception\ValidationException;
 use ArrayObject;
 
 /**
@@ -113,11 +113,11 @@ abstract class AbstractConfig extends ArrayObject implements Config
     }
 
     /**
-     * Validates the instance.
+     * Validates the configuration.
      *
      * @since 1.0.0
      *
-     * @throws ValidationException Thrown when validation fails.
+     * @throws ConfigValidationException Thrown when validation fails.
      */
     public function validate()
     {
